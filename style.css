@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+body.light {
+  background: linear-gradient(45deg, #f0f0f0, #e6e6e6);
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 14px;
+}
+
+body.light .theme-toggle {
+  color: #000;
+}
+
+.calculator {
+  border: 1px solid #717377;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 3px 15px rgba(83, 93, 112, 0.5);
+}
+
+body.light .calculator {
+  background: #ffffff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 320px;
+  border: none;
+  padding: 24px;
+  margin: 10px;
+  background: transparent;
+  font-size: 40px;
+  text-align: right;
+  color: #ccbfbf;
+}
+
+body.light input {
+  color: #333;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+
+button {
+  border: none;
+  width: 70px;
+  height: 50px;
+  margin: 8px;
+  border-radius: 10px; /* rounded corners, but not circular */
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.3s ease;
+}
+
+
+body.light button {
+  background: #f5f5f5;
+  color: #333;
+  border-radius: 10px;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.equalBtn {
+  background-color: #fb7c14;
+  color: white;
+}
+
+body.light .equalBtn {
+  background-color: #ff8c00;
+}
+
+.operator {
+  color: #6dee0a;
+}
+
+body.light .operator {
+  color: #008000;
+}
+
+.name {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+body.light .name {
+  color: #333;
+}
